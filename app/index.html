@@ -24,15 +24,44 @@
     <header><br/><br/><br/><br/></header>
     <section ng-repeat="(key, section) in page.content.sections" id="{{key}}Section" ng-switch="section.meta.type">
         <h2>{{section.title | uppercase}}</h2>
+        <article ng-if="typeof(section.description) != 'undefined'">
+            {{section.description}}
+        </article>
         <article ng-repeat="article in section.articles" class="panel-default" ng-switch-when="textPresentation" ng-if="article.meta.size == 'wide'">
            <div class="panel-body" ng-bind-html="article.text | rawHTML">
             </div>
         </article>
         <article ng-repeat="article in section.articles" class="panel-default col-md-3" ng-switch-when="textPresentation" ng-if="article.meta.size == 'small'">
-            <h3><span class="glyphicon glyphicon-{{article.title.icon}}"></span> {{article.title.value}}</h3>
+            <h3 ng-if="typeof(article.title) != 'undefined'">
+                <span class="glyphicon glyphicon-{{article.title.icon}}" ng-if="typeof(article.title.icon) != 'undefined'"></span> {{article.title.value}}
+            </h3>
             <p>{{article.text}}</p>
         </article>
-        <div ng-if="typeof(section.widget) != 'undefined' && section.widget.meta.type == 'links'" class="{{section.widget.meta.name}}">
+        <article ng-repeat="article in section.articles" class="panel-default col-md-6" ng-switch-when="textPresentation" ng-if="article.meta.size == 'medium'">
+            <h3 ng-if="typeof(article.title) != 'undefined'">
+                <span class="glyphicon glyphicon-{{article.title.icon}}" ng-if="typeof(article.title.icon) != 'undefined'"></span> {{article.title.value}}
+            </h3>
+            <p ng-bind-html="article.text | rawHTML" >
+            </p>
+        </article>
+        <div class="row diapo-list" ng-if="typeof(section.elements) != 'undefined'">
+            <ul>
+                <li ng-repeat="diapo in section.diapos">
+                    <figure>
+                        <img src="" alt="">
+                        <figcaption>
+                            <div class="diapo-description">
+                                <h3>{{diapo.description.title}}</h3>
+                                <p>{{diapo.description.text}}</p>
+                                <a class="btn btn-default" href="#">View Details</a>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </div>
+        <div ng-if="typeof(section.widget) != 'undefined' && section.widget.meta.type == 'links'" class="clearfix {{section.widget.meta.name}}">
+            <div class="clearfix"></div>
             <h3 ng-if="typeof(section.widget.value.title) != 'undefined'">{{section.widget.value.title}}</h3>
             <ul>
                 <li ng-repeat="link in section.widget.value.links">

@@ -8,9 +8,9 @@
             {
                 "meta": {
                     "type": "textPresentation",
-                    "_comment": "// textPresentation, graphicPresentation, promotion, title, prices, functionalities, whatPeopleAreSaying, galery"
+                    "_comment": "// textPresentation, graphicPresentation, promotion, title, prices, functionalities, whatPeopleAreSaying, gallery"
                 },
-                "title": "About me",
+                "title": "The Title",
                 "articles": [
                     {
                         "meta": {
@@ -90,6 +90,36 @@
                         ]
                     }
                 }
+            },
+            {
+                "meta": {
+                    "type": "gallery",
+                    "backgroundImage": "blurry-gray.png",
+                    "_comment": "// textPresentation, graphicPresentation, promotion, title, prices, functionalities, whatPeopleAreSaying, gallery"
+                },
+                "title": "Projects",
+                "description": "Intrinsicly mesh corporate partnerships with synergistic leadership skills. Uniquely negotiate high-payoff potentialities before premium niches. Progressively cultivate functional platforms after focused processes. Assertively supply emerging metrics before out-of-the-box internal or 'organic'.",
+                "diapos": [
+                    {
+                        "description": {
+                            "title": "Big Thing Landing Page",
+                            "text": "Progressively pursue visionary functionalities through vertical ROI. Uniquely unleash alternative experiences vis-a-vis." 
+                        },
+                        "image": {
+                            "src": "big-thing-landing-page.png"
+                        }
+                    },
+                    {
+                        "description": {
+                            "title": "Big Thing Landing Page",
+                            "text": "Progressively pursue visionary functionalities through vertical ROI. Uniquely unleash alternative experiences vis-a-vis." 
+                        },
+                        "image": {
+                            "src": "tiick-tock-coming-soon-page.png"
+                        }
+                    }
+                    
+                ]
             }
         ]
     }

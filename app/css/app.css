@@ -27,7 +27,9 @@ section {
     padding-left: 15px;
     padding-right: 15px;
 }
+/* the Social Widget */
 
+/*positionning of the list*/
 .social ul {
     left: 6px;
     position: relative;
