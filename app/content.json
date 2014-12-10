@@ -1,0 +1,96 @@
+{
+    "meta": {
+    },
+    "content": {
+        "meta": {
+        },
+        "sections": [
+            {
+                "meta": {
+                    "type": "textPresentation",
+                    "_comment": "// textPresentation, graphicPresentation, promotion, title, prices, functionalities, whatPeopleAreSaying, galery"
+                },
+                "title": "About me",
+                "articles": [
+                    {
+                        "meta": {
+                            "size": "wide"
+                        },
+                        "text": "<p>Monotonectally conceptualize go forward relationships and effective paradigms. Uniquely build team building convergence rather than progressive manufactured products. Quickly build professional web services through cross functional vortals. Synergistically transform functionalized e-markets through performance based human capital. Energistically engage global core competencies vis-a-vis superior architectures.</p><p>Holisticly foster process-centric core competencies whereas impactful meta-services. Seamlessly evisculate accurate leadership vis-a-vis highly efficient users. Authoritatively grow multifunctional action items and competitive processes. Collaboratively maximize resource sucking.</p>"
+                    },
+                    {
+                        "meta": {
+                            "size": "small"
+                        },
+                        "title": {
+                            "icon": "headphones",
+                            "value": "Music" 
+                        },
+                        "text": "Efficiently revolutionize one-to-one potentialities before B2B models. Continually leverage other's resource-leveling niche markets whereas focused processes. Distinctively transition high standards in total linkage."
+                    },
+                    {
+                        "meta": {
+                            "size": "small"
+                        },
+                        "title": {
+                            "icon": "film",
+                            "value": "Movies" 
+                        },
+                        "text": "Holisticly pursue pandemic services before distributed experiences. Collaboratively envisioneer just in time niches before ubiquitous e-services. Appropriately enable scalable e-business with leveraged opportunities."
+                    },
+                    {
+                        "meta": {
+                            "size": "small"
+                        },
+                        "title": {
+                            "icon": "briefcase",
+                            "value": "Traveling" 
+                        },
+                        "text": "Authoritatively transition global web services vis-a-vis user-centric content. Rapidiously innovate principle-centered resources via intuitive models. Monotonectally integrate collaborative core competencies before best-of-breed potentialities."
+                    },
+                    {
+                        "meta": {
+                            "size": "small"
+                        },
+                        "title": {
+                            "icon": "book",
+                            "value": "Books" 
+                        },
+                        "text": "Holisticly restore resource-leveling methodologies rather than distinctive e-services. Seamlessly whiteboard unique quality vectors via functionalized catalysts for change. Enthusiastically embrace proactive outsourcing through."
+                    }
+                ],
+                "widget": {
+                    "meta": {
+                        "name": "social",
+                        "type": "links"
+                    },
+                    "value": {
+                        "title": "Follow me on:",
+                        "links": [
+                            {
+                                "icon": "facebook",
+                                "link": "#"
+                            },
+                            {
+                                "icon": "twitter",
+                                "link": "#"
+                            },
+                            {
+                                "icon": "linkedin",
+                                "link": "#"
+                            },
+                            {
+                                "icon": "github",
+                                "link": "#"
+                            },
+                            {
+                                "text": "Or Here",
+                                "link": "#"
+                            }
+                        ]
+                    }
+                }
+            }
+        ]
+    }
+}

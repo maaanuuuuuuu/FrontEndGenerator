@@ -1,0 +1,94 @@
+{
+    "basics": {
+        "email": "desir.emmanuel@gmail.com",
+        "label": "Web Developper",
+        "location": {
+            "address": "2712 Broadway St",
+            "city": "San Francisco",
+            "countryCode": "US",
+            "postalCode": "CA 94115",
+            "region": "California"
+        },
+        "name": "Emmanuel DESIR",
+        "phone": "(+33) 6 83 62 40 97",
+        "picture": "",
+        "profiles": [
+            {
+                "network": "StackOverFlow",
+                "url": "https://stackoverflow.com/users/1514946/manu",
+                "username": "Manu"
+            },
+            {
+                "network": "GitHub",
+                "url": "https://github.com/maaanuuuuuuu",
+                "username": "Manu"
+            }
+        ],
+        "summary": "A summary of John Doe...",
+        "website": "http://johndoe.com"
+    },
+    "education": [
+        {
+            "area": "Software Development",
+            "courses": [
+                "DB1101 - Basic SQL"
+            ],
+            "endDate": "2013-01-01",
+            "gpa": "4.0",
+            "institution": "University",
+            "startDate": "2011-01-01",
+            "studyType": "Bachelor"
+        }
+    ],
+    "interests": [
+        {
+            "keywords": [
+                "Ferrets",
+                "Unicorns"
+            ],
+            "name": "Wildlife"
+        }
+    ],
+    "languages": [
+        {
+            "fluency": "Native speaker",
+            "language": "French"
+        },
+        {
+            "fluency": "Fluent",
+            "language": "English"
+        },
+        {
+            "fluency": "Fluent",
+            "language": "German"
+        },
+        {
+            "fluency": "Notions",
+            "language": "Spanish"
+        }
+    ],
+    "skills": [
+        {
+            "keywords": [
+                "HTML",
+                "CSS",
+                "Javascript"
+            ],
+            "level": "Master",
+            "name": "Web Development"
+        }
+    ],
+    "work": [
+        {
+            "company": "Company",
+            "endDate": "2014-01-01",
+            "highlights": [
+                "Started the company"
+            ],
+            "position": "President",
+            "startDate": "2013-01-01",
+            "summary": "Description...",
+            "website": "http://company.com"
+        }
+    ]
+}

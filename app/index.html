@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en" ng-app="pageGeneratorApp">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css">
+    <link rel="stylesheet" href="css/app.css">
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="js/controllers.js"></script>
+    <title></title>
+</head>
+<body ng-controller="pageController">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse main-nav-collapse">
+                <ul class="nav navbar-nav">
+                    <li ng-repeat="(key, section) in page.content.sections">
+                        <a href="#{{key}}Section">{{section.title | uppercase}}</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header><br/><br/><br/><br/></header>
+    <section ng-repeat="(key, section) in page.content.sections" id="{{key}}Section" ng-switch="section.meta.type">
+        <h2>{{section.title | uppercase}}</h2>
+        <article ng-repeat="article in section.articles" class="panel-default" ng-switch-when="textPresentation" ng-if="article.meta.size == 'wide'">
+           <div class="panel-body" ng-bind-html="article.text | rawHTML">
+            </div>
+        </article>
+        <article ng-repeat="article in section.articles" class="panel-default col-md-3" ng-switch-when="textPresentation" ng-if="article.meta.size == 'small'">
+            <h3><span class="glyphicon glyphicon-{{article.title.icon}}"></span> {{article.title.value}}</h3>
+            <p>{{article.text}}</p>
+        </article>
+        <div ng-if="typeof(section.widget) != 'undefined' && section.widget.meta.type == 'links'" class="{{section.widget.meta.name}}">
+            <h3 ng-if="typeof(section.widget.value.title) != 'undefined'">{{section.widget.value.title}}</h3>
+            <ul>
+                <li ng-repeat="link in section.widget.value.links">
+                    <a href="{{link.link}}">
+                        <i ng-if="typeof(link.icon) != 'undefined'" class="icon icon-{{link.icon}}"></i>
+                        <p ng-if="typeof(link.text) != 'undefined'">{{link.text}}</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+</body>
+</html>

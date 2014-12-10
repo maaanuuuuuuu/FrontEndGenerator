@@ -1,0 +1,40 @@
+/**** the menu  ****/
+/* center the menu */
+.main-nav-collapse {
+    text-align: center;
+}
+.navbar-default .navbar-nav {
+    display: inline-block;
+    float: none;
+    margin: 0 auto;
+    vertical-align: middle;
+}
+/* center article headings */
+section h2 {
+    color: #bc341b;
+    font-family: "Josefin Slab Light";
+    font-size: 3em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    margin-top: 0;
+    text-align: center;
+}
+/* Sections are centered and not to wide on wide screens */
+section {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.social ul {
+    left: 6px;
+    position: relative;
+    top: -3px;
+}
+.social ul li, .social ul {
+    display: inline-table;
+    margin: 0;
+    padding: 0;
+}
